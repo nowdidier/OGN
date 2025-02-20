@@ -1,0 +1,29 @@
+{
+  "name": "phphleb/spreader",
+  "description": "Allows you to choose the method to use the configs for PHP Framework HLEB2",
+  "type": "library",
+  "keywords": [
+    "php",
+    "hleb2"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Foma Tuturov",
+      "email": "fomiash@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": ">=8.2.0",
+    "phphleb/framework": ">=2.0.0",
+    "phphleb/nicejson": "*",
+    "phphleb/updater": "*",
+    "ext-json": "*",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phphleb\\Spreader\\": "/"
+    }
+  }
+}

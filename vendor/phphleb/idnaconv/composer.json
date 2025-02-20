@@ -1,0 +1,29 @@
+{
+    "name": "phphleb/idnaconv",
+    "description": "Encode/decode internationalized domain names",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Sommerfeld",
+            "email": "mso@phlylabs.de"
+        },
+        {
+            "name": "Foma Tuturov",
+            "email": "fomiash@yandex.ru"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-0": {
+            "Phphleb\\Idnaconv\\": "/"
+        }
+    },
+    "require": {
+        "php": ">=8.2.0",
+        "ext-json": "*"
+    },
+    "minimum-stability": "dev"
+}

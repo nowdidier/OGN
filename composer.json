@@ -1,0 +1,78 @@
+{
+	"name": "libarea/libarea",
+	"description": "A platform for collective blogs and social media platform, forum, question and answer service. Website directory, search.",
+	"type": "project",
+	"keywords": [
+		"hleb",
+		"libarea",
+		"social-network",
+		"directory",
+		"community",
+		"search",
+		"facets",
+		"blogs",
+		"blog",
+		"mvc",
+		"php"
+	],
+	"homepage": "https://github.com/libarea/libarea",
+	"license": "MIT",
+	"authors": [
+	{
+		"name": "Evgeny Konchik",
+		"email": "libarea@yandex.ru",
+		"homepage": "https://libarea.ru"
+	}
+	],
+    "require": {
+        "php": ">=8.2.0",
+        "ext-pdo": "*",
+        "ext-curl": "*",
+        "phphleb/framework": "^2.0.1",
+        "phphleb/migration": "dev-main",
+		"phphleb/imageresizer": "dev-master",
+		"phphleb/muller": "dev-main",
+		"cocur/slugify": "^4.5.1",
+		"donatj/phpuseragentparser": "dev-master",
+		"utopia-php/domains": "^0.5.0",
+		"matthiasmullie/minify": "dev-master",
+		"akh/typograf": "dev-master",
+		"phpmailer/phpmailer": "^6.8.0",
+		"symfony/dom-crawler": "7.1.x-dev",
+		"symfony/css-selector": "7.1.x-dev",
+		"guzzlehttp/guzzle": "7.9.x-dev",
+		"gemorroj/stop-spam": "dev-master",
+		"phphleb/idnaconv": "dev-main",
+		"elvanto/litemoji": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "app/",
+            "vendor/phphleb",
+			"modules/"
+        ],
+        "psr-4": {
+            "Phphleb\\": "vendor/phphleb/",
+            "Hleb\\": "vendor/phphleb/framework/",
+            "App\\": "app/",
+			"Modules\\": "modules/"
+        },
+        "exclude-from-classmap": [
+            "/storage/",
+            "/config/",
+            "/routes/",
+            "/vendor/phphleb/tests/",
+            "/vendor/phphleb/framework/Optional/",
+            "/vendor/phphleb/docs/match-directory"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php console project-setup-task --clear"
+        ]
+    },
+    "minimum-stability": "dev"
+}

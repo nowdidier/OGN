@@ -1,0 +1,32 @@
+/*
+ * Additional styles
+ *
+ * Дополнительные стили
+ */
+
+@font-face {
+  font-family: Roboto;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+  font-display: swap;
+}
+
+.nickname {
+  display: inline-block;
+  color: var(--black);
+}
+
+.nickname::first-letter {
+  color: red;
+}
+
+.nickname.new::first-letter {
+  color: var(--green);
+}
+
+.active {
+  color: #eab308;
+}
+
+ul.nav>li.active>a {
+  color: var(--nav-color-active);
+}

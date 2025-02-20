@@ -1,0 +1,28 @@
+{
+    "name": "phphleb/migration",
+    "description": "Primitive migrations for the HLEB2 framework",
+    "type": "library",
+    "keywords": [
+        "migration",
+        "php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Foma Tuturov",
+            "email": "fomiash@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Phphleb\\Migration\\": "/"
+        }
+    },
+    "require": {
+        "php": ">=8.2.0",
+        "ext-readline": "*",
+        "phphleb/updater": "*",
+        "ext-pdo": "*"
+    },
+    "minimum-stability": "dev"
+}
