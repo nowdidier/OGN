@@ -25,7 +25,7 @@ return [
 
     // Default localization (+ languages represented)
     // Локализация по умолчанию (+ какие языки есть в системе)
-    'lang'  => 'ki',
+    'lang'  => 'en',
     'languages'     => [
         'ru'        => 'Русский',
         'ua'        => 'Український',

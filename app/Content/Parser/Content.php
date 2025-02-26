@@ -53,7 +53,7 @@ class Content
 
         $text = $Parsedown->text($content);
 
-        if (UserData::getUserLang() === 'ki') {
+        if (UserData::getUserLang() === 'i') {
             return self::typograf($text);
         }
 

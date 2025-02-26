@@ -102,7 +102,7 @@ class SettingController extends Controller
                 'color'                => Request::post('color')->asString('#339900'),
                 'about'                => $_POST['about'], // for Markdown
                 'template'             => $data['template'] ?? 'default',
-                'lang'                 => $data['lang'] ?? 'ki',
+                'lang'                 => $data['lang'] ?? 'en',
                 'whisper'              => $user['whisper'] ?? '',
                 'website'              => Request::post('website')->asString(''),
                 'location'             => Request::post('location')->asString(''),

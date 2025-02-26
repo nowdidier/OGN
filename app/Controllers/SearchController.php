@@ -49,7 +49,7 @@ class SearchController extends Controller
         if ($q) {
 
             $lang = config('general', 'lang');
-            if (!in_array($lang, ['ki', 'en'])) {
+            if (!in_array($lang, ['en', 'en'])) {
                 $lang = 'en';
             }
 

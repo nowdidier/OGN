@@ -172,7 +172,7 @@ class UsersController extends Module
                 'activated'     => Request::post('activated')->value() === 'on' ? 1 : 0,
                 'limiting_mode' => Request::post('limiting_mode')->value() === 'on' ? 1 : 0,
                 'template'      => $user['template'] ?? 'default',
-                'lang'          => $user['lang'] ?? 'ki',
+                'lang'          => $user['lang'] ?? 'en',
                 'scroll'        => Request::post('scroll')->value() === 'on' ? 1 : 0,
                 'nsfw'          => Request::post('nsfw')->value() === 'on' ? 1 : 0,
                 'post_design'   => Request::post('post_design')->value() === 'on' ? 1 : 0,
