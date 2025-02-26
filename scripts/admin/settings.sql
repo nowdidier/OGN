@@ -1,8 +1,5 @@
---
--- Структура таблицы `settings`
--- Всё будет меняться, на данный момент нет смысла делать запрос. 
--- Данный функционал не поддерживается. В стадии разработки.
--- 
+-- Imiterere ya table ya `settings`
+-- Ibisabwa by’ingenzi kuri interineti mu Kinyarwanda
  
 CREATE TABLE `settings` (
   `val` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
@@ -12,21 +9,21 @@ CREATE TABLE `settings` (
 
 
 INSERT INTO `settings` (`val`, `value`) VALUES
-('url', 'https://agezweho.com'),
-('email', 'mail@agezweho.com'),
-('name', 'agezweho'),
-('title', 'AGEZWEHO — Umuryango (porogaramu y\'amablog menshi)'),
-('img_path', '/assets/images/agezweho.jpg'),
-('img_path_web', '/assets/images/libarea-web.png'),
-('banner_title', 'AGEZWEHO — Umuryango'),
-('banner_desc', 'Inyandiko zijyanye n\'ibyo ukunda. Ibiganiro, ibibazo n\'ibisubizo, ibisobanuro. Porogaramu y\'amablog menshi'),
+('url', 'https://agezweho.com',
+('email', 'info@agezweho.com',
+('name', 'Agezweho',
+('title', 'AGEZWEHO — Ibirimo by\'ingenzi'),
+('img_path', '/assets/images/AGEZWEHO.jpg'),
+('img_path_web', '/assets/images/AGEZWEHO-web.png'),
+('banner_title', 'AGEZWEHO — Amakuru y\'uyu munsi'),
+('banner_desc', 'Aha ni ho ushobora kubona amakuru agezweho mu Rwanda'),
 
-('feed_title', 'AGEZWEHO — Umuryango (porogaramu y\'amablog menshi)'),
-('feed_desc', 'Inyandiko zijyanye n\'ibyo ukunda, urutonde rw\'amakuru, amablog. Urutonde rwa websites. Urubuga rw\'amablog y\'itsinda, porogaramu y\'amablog menshi (umuryango) AGEZWEHO'),
-('top_title', 'AGEZWEHO — Ibisohoka Bikunzwe cyane'),
-('top_desc', 'Urutonde rw\'ibisohoka bikunzwe cyane mu muryango (hashingiwe ku mubare w\'ibisubizo). Inyandiko zijyanye n\'ibyo ukunda. Ibiganiro, ibibazo n\'ibisubizo, ibisobanuro. Porogaramu y\'umuryango AGEZWEHO'),
+('feed_title', 'AGEZWEHO — Ibiganiro'),
+('feed_desc', 'Ibiganiro, amakuru n\'inyandiko mu Kinyarwanda; urutonde rw\'ibiganiro n\'amyirondoro'),
+('top_title', 'AGEZWEHO — Ibisohoka Byiza'),
+('top_desc', 'Ibisohoka bihanitse hashingiwe ku mibare n\'ibitekerezo by\'abakoresha'),
 ('all_title', 'AGEZWEHO — Ibisohoka Byose'),
-('all_desc', 'Urutonde rw\'ibisohoka byose mu muryango. Porogaramu y\'umuryango AGEZWEHO'),
+('all_desc', 'Ibisohoka byose biri ku rubuga rwacu mu Kinyarwanda'),
 
 ('ads_home_post', ''),
 ('ads_home_sidebar', ''),
