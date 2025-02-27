@@ -21,8 +21,13 @@ header('X-XSS-Protection: 1; mode=block');
 header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: SAMEORIGIN');
 header('X-Powered-By: LibArea');
-// ... //
 
 // Initialization.
-// Инициализация.
-require __DIR__ . '/../vendor/phphleb/framework/bootstrap.php';
+try {
+    require __DIR__ . '/../vendor/phphleb/framework/bootstrap.php';
+} catch (\Throwable $e) {
+    // ...existing error logging or handling...
+    http_response_code(500);
+    echo "An error occurred. Please try again later.";
+    exit;
+}

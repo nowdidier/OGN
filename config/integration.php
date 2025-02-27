@@ -10,15 +10,15 @@ return [
     // Если smtp включен - true, то заполните настройки вниэу
     'smtp'      => true,
     'smtp_user' => 'nowdidier@gmail.com',
-    'smtp_pass' => 'your-app-specific-password',
+'smtp_pass' => 'kekv tzfc xrfz qean',
     'smtp_host' => 'smtp.gmail.com',
     'smtp_port' => 587,
 
     // Captcha. Using hCaptcha's free tier
     // Капча. Использование бесплатного уровня hCaptcha
     'captcha'               => true, 
-    'captcha_public_key'    => '10000000-ffff-ffff-ffff-000000000001', // hCaptcha site key
-    'captcha_private_key'   => '0x0000000000000000000000000000000000000000', // hCaptcha secret key
+    'captcha_public_key'    => '6LdXVeQqAAAAALMAfJeL_3nM00N8cd3emw-EyV2C', // hCaptcha site key
+    'captcha_private_key'   => '6LdXVeQqAAAAABpqedq_9GQcsbT_KDVkZPcZ6S66', // hCaptcha secret key
     
     // Discord WEBHOOK URL
     // For Discord server settings, go to the Webhooks section and create a new one 
